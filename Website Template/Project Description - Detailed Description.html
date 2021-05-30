@@ -92,7 +92,7 @@
 							<p>Random encounters will be encountered every 1000 steps that a player takes while the game is open. They will involve fighting a fairly weak enemy, relative to the player's level, and the player will get rewarded with a small amount of currency for defeating the enemy. Players will be able to flee from random encounters if they do not wish to fight them. Below is an example of a random encounter enemy.</p>
 							<p> Here is a design for an enemy: a Scarf Dragon! (Also goes by MrStealYoScarf) 
 							<br>
-							The Scarf Dragon is designed to be (mostly) an easter egg type of enemy and is commonly located around clothes stores, and the further away it is located from one, the faster its speed (see: priority in the weapons and items section down below) is and the more likely it is to flee after a turn has passed to suggest that MrStealYoScarf is turning tail (;D) with the store's scarves. If the player uses anything that is flame related on it, an animation for the scarf burning will play and the dragon will either give up the fight and let you finish it or flee immediately due to the speed increase from losing the scarf. If it manages to flee (read: low possiblity), there is then a chance for the player to encounter the parent dragon. This part wasn't able to be animated and designed due to time constraints. The dragon is <i>super</i> careful with its own flames so it would <i>never</i> burn its scarves. In fact, the reason it steals scarves is for warmth in order to grow to maturity. Why scarves instead of any other clothing item? Because scarves are stylish (and cool to sprite) and loosely inspired by <a href="https://pokemondb.net/pokedex/greninja" target="_blank" style="colour:blue"> Greninja</a>.
+							The Scarf Dragon is designed to be (mostly) an easter egg type of enemy and is commonly located around clothes stores, and the further away it is located from one, the faster its speed (see: priority) is and the more likely it is to flee after a turn has passed to suggest that MrStealYoScarf is turning tail (;D) with the store's scarves. If the player uses anything that is flame related on it, an animation for the scarf burning will play and the dragon will either give up the fight and let you finish it or flee immediately due to the speed increase from losing the scarf. If it manages to flee (read: low possiblity), there is then a chance for the player to encounter the parent dragon. This part wasn't able to be animated and designed due to time constraints. The dragon is <i>super</i> careful with its own flames so it would <i>never</i> burn its scarves. In fact, the reason it steals scarves is for warmth in order to grow to maturity. Why scarves instead of any other clothing item? Because scarves are stylish (and cool to sprite) and loosely inspired by <a href="https://pokemondb.net/pokedex/greninja" target="_blank" style="colour:blue"> Greninja</a>.
 							</p>
 							<p> Below is the what the player sees when first encountering the dragon, with the second image being the final pose the dragon takes once it goes through its encounter animation. </p>
 							<img src='images/Mrstealyoscarf Still.png' style='width:36%'>
@@ -158,7 +158,7 @@
 							<img src='images/Tank Top.png' style='width:10%'>
 							<img src='images/Boot.png' style='width:10%'>
 							<img src='images/Gold Coin.png' style='width:10%'>
-							<br>
+							
 							<h4> Weapons and Items </h4>
 							<p> Other RPG games feature <a href="https://wowpedia.fandom.com/wiki/Incanter%27s_Regalia" target="_blank" style="colour:blue"> 'Equipment Sets'</a>, where each unique clothing item is designed with a theme. Wearing pieces of the set together grants bonuses that pertains to a unique playstyle that usually differs from the 'main' or intended playstyle of the character. </p>
 							<p> This set is for the black mage, and its theme is duality with the stereotypical light vs. dark trope. What springboarded the design process was the design of <a href="https://www.realmeye.com/wiki/archbishop-leucoryx" target="_blank" style="colour:blue"> Archibishop Leucoryx </a> and his items from Realm of the Mad God, which inspired the theme. </p>
@@ -175,17 +175,17 @@
 </p>
 <p>
 <b>Passives</b>: <br>
-Adept: <br>
+<b>Adept</b>: <br>
 [<b>Spell potency</b>] increased by 15% <br>
 [<b>Spell potency</b>: Spell power, buff strength]
 </p>
 <p>
-Touch of the void: <br>
+<b>Touch of the void:</b> <br>
 After spellcast, deal 8% of all enemy's current health as shadow damage. (Capped at X for bosses) 
 </p>
 <p>
 <b>Active:</b> <br>
-Corrupt Ascension <br>
+<b>Corrupt Ascension</b> <br>
 All sources of [<b>spell potency</b>] amplified by 50% <br>
 Does not stack. <br>
 Not affected by [<b>spell potency</b>] <br>
@@ -199,20 +199,20 @@ Gain access to passives and active only if at more than or equal to 50% hp.
 </p>
 <p>
 <b>Passives:</b> <br>
-Trailblazer: <br>
+<b>Trailblazer:</b> <br>
 Gain 2 [<b>Priority</b>] <br>
 [<b>Priority</b>: Determines order in which entities take their turns. The entity with the highest priority takes their turn first.
 Should there be a tie, order will be determined by Ally > Enemy, then by class: White Mage > Mage > Warrior > Tank] 
 </p>
 <p>
-Radiant Heart: <br>
+<b>Radiant Heart:</b> <br>
 Before spellcasts, increase team [<b>spell potency</b>] by 10%. <br>
 Lasts this turn only. <br>
 Does not stack. 
 </p>
 <p>
-<b>Active:</b> <br>
-Splendor: <br>
+Active: <br>
+<b>Splendor:</b> <br>
 Deal light damage equal to 130% of your spell power. <br>
 [<b>Spell potency</b>] is twice as effective for this spell.</p>
 							
@@ -238,7 +238,165 @@ Deal light damage equal to 130% of your spell power. <br>
 							<h2>Testing</h2>
 							<p> pUser testing with users gathered from RPG game or AR game subreddits and discord groups. These users will be enticed to join the testing program through the promise of tester exclusive in game cosmetic items. Approximately 30 users will be used to test the first stages of the game, with potentially more people added as the testing process continues. This number will be limited to ensure that we as a group are not overwhelmed by the number of reports we get from the users, as our group is fairly small. Testing will be done through figma mock ups to start with, then moving into actual versions of the game once they start being created. The users will be given access to the mock ups and earlier versions of the game and told to check that every button in the application functions, and encouraged to do whatever they possibly can to break the game. This will allow us to find and correct any issues with the game, until there are no more issues. We will know that we have succeeded when the users who are testing the game no longer find any bugs and no longer have complaints with the games core mechanics, such as battles, quests and the main story line. Additionally, further into the games development, we will know that we are succeeding when there are no longer any issues with using the game on different operating systems (android/ios) or with using different fitness tracking devices (apple watch/fitbit/samsung gear). </p>
 							<h2>Timeframe</h2>
-							<p> placeholder </p>
+							<table>
+								<thead>
+									<tr>
+										<th> Week: <th>
+										<th> Oscar: </th>
+										<th> James: </th>
+										<th> Darren: </th>
+										<th> Mark: </th>
+										<th> Josh: </th>
+										<th> Kenneth </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th> Week 7: <th>
+										<th> Selected the role of IT work for A2 </th>
+										<th> Clarified my role as Industry Data </th>
+										<th> Deciding that I should cover the side story aspect of the game </th>
+										<th> Deciding my role on the project i will take on</th>
+										<th> The group decided on roles for A2, mine was to do the IT Technologies section </th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 8: <th>
+										<th> Conducted an interview with Robert Jackson, set up a website for A2. Adopted a section for IT technologies. </th>
+										<th> Working on my Industry Data section</th>
+										<th>Clarified that I will be doing the side story, as well as, the tools and technology</th>
+										<th> Started the report ,gathering references  </th>
+										<th> Completed the IT Technologies section </th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 9: <th>
+										<th> Added content to the website and aided with any other group members.</th>
+										<th> Refining website, clearing up grammar errors </th>
+										<th> Adding more information regarding the tools and technology section </th>
+										<th> Continued working on the report, completed half of the base sprite for each class </th>
+										<th> Added content to A2 website, ensuring that there were no issues and compiled A2 report</th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 10: <th>
+										<th> Adopted the role to work on Overview, motivation and landscape </th>
+										<th> Began working on sprites </th>
+										<th> Working more on the tools and technology, as well as, adding some more bits of side story </th>
+										<th> Finished the base sprite of the character of each class  </th>
+										<th> The group assigned roles for A3 - mine was to work on the report</th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 11: <th>
+										<th> Writing up the above sections of the report. Chose to work on the coding aspect of the game</th>
+										<th> Started on the sprites for classes as well as inventory icons</th>
+										<th> Continuing the work for the section </th>
+										<th> Making keyframes of the sprite actions of a class</th>
+										<th> Writing up parts of the report, such as the group processes, aims and the testing methodology </th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 12: <th>
+										<th> Coded the game, began writing up section for plans and progress, + adding my work to the website </th>
+										<th> Animating magic attacks </th>
+										<th> Finishing the tools and technology aspect of the game, as well as, the story </th>
+										<th> Finished the scope and limitation </th>
+										<th> Finishing the report and uploading all content onto the website which has been created for A3 </th>
+										<th> Kenneth </th>
+									</tr>
+									<tr>
+										<th> Week 13: <th>
+										<th> Research into the best way to make the game on IOS.</th>
+										<th> Continued work on animations for attacks and other events</th>
+										<th> Creation of main story for the game </th>
+										<th> Creating the UI of the app </th>
+										<th> Research into the best way to make the game on Android.</th>
+										<th> Working on enemy sprites for dungeons and random encounters </th>
+									</tr>
+									<tr>
+										<th> Week 14: <th>
+										<th> Development of initial prototype on IOS </th>
+										<th> Coordination of the art for the app to ensure it is all in the same style - this will be an ongoing responsibility </th>
+										<th> Continued work on main story </th>
+										<th> Continued work on the UI </th>
+										<th> Development of initial prototype on Android </th>
+										<th> Continued work on enemies</th>
+									</tr>
+									<tr>
+										<th> Week 15: <th>
+										<th> Incorporation of main story into prototype on IOS </th>
+										<th> Creation of a font in the games style, for use in the game and promotional materials </th>
+										<th> Creation of side quests for the game </th>
+										<th> Completion of the UI </th>
+										<th> Incorporation of main story into prototype on Android </th>
+										<th> Completion of enemies </th>
+									</tr>
+									<tr>
+										<th> Week 16: <th>
+										<th> Incorporation of UI design into prototype on IOS </th>
+										<th> Creation of designs for shops in game </th>
+										<th> Continued work on side quests </th>
+										<th> Backgrounds for various in-game scenes and events </th>
+										<th> Incorporation of UI design into prototype on Android </th>
+										<th> Creation of design and reasons for random encounters in game </th>
+									</tr>
+									<tr>
+										<th> Week 17: <th>
+										<th> Incorporation of side quests into prototype on IOS </th>
+										<th> Continued work on in game shops </th>
+										<th> Creation of daily and weekly quests for the game</th>
+										<th> Work on locating real world landmarks for dungeons and shops</th>
+										<th> Incorporation of side quests into prototype on Android </th>
+										<th> Continued work on random encounters </th>
+									</tr>
+									<tr>
+										<th> Week 18: <th>
+										<th> Incorporation of random encounters into prototype on IOS </th>
+										<th> Creation of promotional materials for the app </th>
+										<th> Continued work on daily and weekly quests </th>
+										<th> Continued work on locating real world landmarks for dungeons and shops</th>
+										<th> Incorporation of random encounters into prototype on Android </th>
+										<th> Creation of designs for dungeons </th>
+									</tr>
+									<tr>
+										<th> Week 19: <th>
+										<th> Incorporation of daily and weekly quests into prototype on IOS </th>
+										<th> Continued work on promotional materials for the app</th>
+										<th> Additional research to determine exactly which fitness tracking technologies are best to partner with </th>
+										<th> Continued work on locating real world landmarks for dungeons and shops </th>
+										<th> Incorporation of daily and weekly quests into prototype on Android</th>
+										<th> Continued creation of dungeons </th>
+									</tr>
+									<tr>
+										<th> Week 20: <th>
+										<th> Incorporation of shops into prototype on IOS </th>
+										<th> Continued work on promotional materials for the app </th>
+										<th> Contacting fitness tracking tech companies to form relationships and attempt to gain access to their technologies for our app </th>
+										<th> Testing of the IOS prototype to ensure there are no obvious issues </th>
+										<th> Incorporation of shops into prototype on Android</th>
+										<th> Testing of the Android prototype to ensure there are no obvious issues </th>
+									</tr>
+									<tr>
+										<th> Week 21: <th>
+										<th> Begin incorporation of fitness tracking technologies for IOS prototype </th>
+										<th> Distribution of promotional materials </th>
+										<th> Continuation of above</th>
+										<th> Continued testing of the IOS prototype to ensure there are no obvious issues with new things being added</th>
+										<th> Begin incorporation of fitness tracking technologies for Android prototype </th>
+										<th> Continued testing of the Android prototype to ensure there are no obvious issues with new things being added</th>
+									</tr>
+									<tr>
+										<th> Week 22: <th>
+										<th> Continue incorporation of fitness tracking technologies for IOS prototype </th>
+										<th> Continued distribution of promotional materials </th>
+										<th> Finalisation of agreements with fitness tracking companies</th>
+										<th> Continued testing of the IOS prototype to ensure there are no obvious issues with new things being added</th>
+										<th> Continue incorporation of fitness tracking technologies for Android prototype </th>
+										<th> Continued testing of Android prototype to ensure there are no obvious issues with new things being added</th>
+									</tr>
+								</tbody>
+							</table>
 							<h2>Risks</h2>
 							<p> When developing a game there are always major risks that must be taken, sometimes you reap the rewards from these risks other times you must reformulate your strategy. A major risk that was taken was to use the software Unity for our game development, none of the group members were previously familiar with this software. When development of the battle scenario began on unity, it became very clear that without prior knowledge of the coding language C# that I would be extremely hard and unfeasible to create a strong and compelling battle scenario. The group decided that a text version of the battle scenario will be created using Python as we were all familiar with that language of coding. </p>
 							<p>Another risk was the choosing of the art design that would be the overall feel of the game, the design team decided that pixel art would be a great aesthetic for the game. Unlike the software chosen for the game, this one seemed to pay off, as it creates this nostalgic feel to other games such as Pokémon and Final Fantasy, especially with a similar combat style. It also allowed for a wide variety of members to work on the art as it is a bit simpler than creating hyper-realistic character, armour and weapons. But, it also created a sense of originality and uniqueness by pairing this art design with the concept of augmented reality, as it takes two complete opposites and merges them together.</p>
