@@ -65,13 +65,26 @@
 							<p>The idea for creating the game was to design a functioning battle scenario using Unity, the group had no experience using Unity, so group member Oscar volunteered to try and learn how to develop this game using unity. Firstly, the HUD For the battle scenario was created depicting a statement like “You have encountered an Enemy'' and to the right of that were options ‘Fight’ and ‘Flee’, a Pokémon text box was used as a placeholder before the art team developed an original HUD.(see Figure 1) This was just a visual aid, the plan was to make the ‘Fight’ and ‘Flee’ option selectable and they would open new selectable options. Before this process was worked on, a background, character and health bar were added. The background used was a placeholder from Final Fantasy, that was going to be replaced by a background created by the art team, the character health bars were just coloured boxes and text, this was also a place holder (See Figure 2). From here the scripts must be added to the text to allow them to be selectable. This is were a major obstacle was placed in front of us, being unfamiliar with unity, Oscar did not know that the coding was done using C#, a language that he and the rest of the group was unfamiliar with. To try and grasp as much information as possible in the short time we had, he tried researching the similar games done in unity, he stumbled across a person remaking a Pokemon game in unity, which contains a similar fight scenario to our game. (https://www.youtube.com/watch?v=_Pm16a18zy8&t=3s) . After watching many of these videos, created by Game Dev Experiments, and trying to implement the code shown in the videos to our battle scenario, it was made very clear that without a prior understanding of C# that it would be unfeasible to create a functioning and good battle scenario that our game depicts. Furthermore, we did not want to be plagiaristic and just completely copy Game Dev Experiments code and just change the images and animation to fit our game, as that is unethical and there is no learning that comes from that. </p>
 							<p>Ultimately, the idea of creating a battle scenario in unity was scrapped, but the group still wanted some sort of interactable prototype that a user could play with to understand how the battle scenario would work in this type of game. So again, Oscar would work on creating this, instead of unity, a text based version was going to be created using Python, a language our whole group was familiar with. The battle scenario for this game was condensed into one ‘While loop’ that would always run so long as the player’s or enemy's health was above 0 (See figure 3). Within this loop there were multiple if and elif statements that gave the user various options when fighting an enemy. The first set of options to pick from were attack, inventory, recharge mana and flee, from which more options were available, except for flee as it ends the battle. Attack gives the player a list of 4 attacks to choose, each attack requires a specific amount of mana based on the amount of damage. This is where an obstacle arises, as doing damage to the enemy and the enemy  damaging the player were in the same ‘if’ statement, meaning that both the enemy and player attack at the same time, potentially leaving both of them to be defeated. In order to remedy this, an new ‘if’ statement was created allowing the enemy to attack only if its hp was above 0, which created a turn based system rather them both attacking at the same time . Another problem that arouse was that when a player used a health potion in the inventory it allowed their HP do go above 100, after consulting the group, Mark gave the simple answer of inserting a line of code into the ‘if’ statement stating when the players hp is above 100, always set the value to 100.</p>
 							<p>After the main crux of the battle scenario was completed, such as the move list, enemy doing damage, inventory created and mana recharge option complete. There was just some minor quality of life improvements to add, such as if the user does not enter the correct option it gives them the message “Enter the corresponding number” and also adding little features such as the amount of mana each attack requires. Overall, the battle scenario was clearly portrayed in a text format using python, after many hurdles and obstacles, the playable prototype was completed.</p>
-							<h3>Gameplay</h3>
+							
+							<h2>Gameplay</h2>
+							
 							<h4>Characters</h4>
 							<p> placeholder </p>
 							<h4>Overworld</h4>
 							<p> placeholder </p>
+							
 							<h4>Random Encounters</h4>
-							<p> placeholder </p>
+							<p> Here is a design for an enemy: a Scarf Dragon! (Also goes by MrStealYoScarf) </p>
+							<br>
+							<p> Below is the what the player sees when first encountering the dragon, with the second image being the final pose the dragon takes once it goes through its encounter animation. </p>
+							<img src='images/Mrstealyoscarf Still.png'>
+							<img src='images/Mrstealyoscarf FP Still.png'>
+							<br>
+							<p> The encounter animation shown below plays when the dragon appears on the UI, much like the Pokemon games(reference here). It remains unfinished. </p>
+							<img src='images/gifs/Mrstealyoscarf 1fps.gif'>
+							<img src='images/gif/Mrstealyoscarf Fast.gif'>
+							<img src='images/gif/Mrstealyoscarf Final Pos.gif'>
+							
 							<h4>Dungeons</h4>
 							<p> placeholder </p>
 							<h4>Quests</h4>
